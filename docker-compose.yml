@@ -1,0 +1,9 @@
+mariadb:
+  image: 'mariadb'
+  restart: 'always'
+  container_name: 'test-mariadb'
+  environment:
+    MYSQL_DATABASE: 'dev_database'
+    MYSQL_ROOT_PASSWORD: 'dev'
+  ports:
+  - "3306:3306"
