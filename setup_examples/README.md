@@ -57,7 +57,7 @@ These two create the same schema as the `setup_with_metadata` example above, but
 
 The Base class is the foundation of SQLAlchemy's ORM. Python classes mapped to the database tables all inherit from the Base class.
 
-The Base class can be instantiated thourgh the ORM's `registry` object. This is how the instanation is made in the `setup_with_orm_registry` example.
+The Base class can be instantiated through the ORM's `registry` object. This is how the installation is made in the `setup_with_orm_registry` example.
 
 ```
 from sqlalchemy.orm import registry
