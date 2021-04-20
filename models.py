@@ -1,6 +1,5 @@
 from sqlalchemy import MetaData, Column, Integer, String, ForeignKey
-from sqlalchemy.orm import relationship
-from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import relationship, declarative_base
 
 
 # Apply a naming convention to database constraints through the MetaData
@@ -67,4 +66,3 @@ class Address(Base):
     country = Column(String(30), nullable=False)
 
     account_id = Column(Integer, ForeignKey('account.id'))
-
